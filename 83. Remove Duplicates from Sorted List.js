@@ -1,0 +1,1 @@
+deleteDuplicates = (head,ar=[])=> {  while(head){ ar.push(head.val); head = head.next; } var jz = Array.from(new Set(ar)); h = jz.reverse().reduce((acc, curr) => { if (acc == null) {acc = new ListNode(curr); } else {acc = new ListNode(curr, acc);}return acc;}, null);return h }
